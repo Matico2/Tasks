@@ -14,7 +14,7 @@ class SecurityPreferences(context: Context) {
     fun store(key: String, value: String) {
         preferences.edit().putString(key, value).apply()
     }
-
+    
     fun remove(key: String) {
         preferences.edit().remove(key).apply()
     }
